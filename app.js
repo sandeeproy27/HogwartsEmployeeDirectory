@@ -30,7 +30,7 @@ app.put('/employee', employee.updateEmployeeData);
 app.delete('/employee/:employeeId', employee.deleteEmployeeData);
 
 //Setting the port number
-app.set('port', process.env.PORT || 3030);
+app.set('port', process.env.PORT || 8080);
 
 app.listen(app.get('port'), function() {
 	console.log('Express server listening on port ' + app.get('port'));
